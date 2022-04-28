@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head><title>Farmer</title>
+        
+	<link rel="stylesheet" type="text/css" href="css/adminlogin.css">
+	</head>
+	<body>
+<div class="heading">
+<font color="#0f0">Enter the Product Information here..!!</font>
+</div>
+<br><br>
+  <div class="nav">
+<ul>    <li>  <a  href="profile.php">Back</a> </li>
+ </ul>
+    </div>
+<br/><br/>
+<div class="title">
+<br/><br/>
+<h2>Add Products</h2>
+</div>
+<div class="simple-form">
+<form action="addproduct.php" name="contact" method="POST">
+<br/><br/>
+<fieldset id="registration">
+<div>
+Username: <input type="text" name="username" id="button" value="" placeholder="Username"/><br/><br/>
+Select Image: <input type="file" name="productPic"></input><br/><br/>
+Select Catagory: 
+	<select name="type" id="button" required">
+		<option value="">- Category -</option>
+		<option value="Fruit">Fruit</option>
+		<option value="Vegetable">Vegetable</option>
+		<option value="Grains">Grains</option>
+		<option value="dairy">Dairy Products</option>
+	</select><br/><br/>
+	Name of Product: <input type="text" name="pname" id="pname" value="" placeholder="Product Name"/><br/><br/>
+	Describe Product: <textarea  name="pinfo" id="pinfo" rows="12"></textarea><br/><br/>
+	Price: <input type="text" name="price" id="price" value="" placeholder="Price"/><br/><br/>
+<input type="submit" value="Add Product" id="butt">
+<input type="reset" value="Reset Details" id="butt">
+</fieldset><br/>
+</form>
+</div>
+</body>
+</html>
